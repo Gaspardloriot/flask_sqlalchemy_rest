@@ -6,3 +6,4 @@ uvicorn==0.15.0
 PyJWT==2.3.0
 firebase_admin==5.2.0 
 python-dotenv==0.19.2
+python-multipart==0.0.5
