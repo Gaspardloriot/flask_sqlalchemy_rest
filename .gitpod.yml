@@ -3,7 +3,10 @@ image: gitpod/workspace-postgres
 
 tasks:
   - init: pip install -r requirements.txt
-    command: python src/main.py
+    command: |
+      pip install -r requirements.txt
+      pip install --upgrade pip
+      python src/main.py
     env:
         TYPE: "service_account"
         PROJECT_ID: "esg-analytics-595c5"
